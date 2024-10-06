@@ -27,6 +27,9 @@ if TYPE_CHECKING:
     from langchain_community.agent_toolkits.connery import (
         ConneryToolkit,
     )
+    from langchain_community.agent_toolkits.dendrite.toolkit import (
+        DendriteToolkit,
+    )
     from langchain_community.agent_toolkits.file_management.toolkit import (
         FileManagementToolkit,
     )
@@ -104,6 +107,7 @@ __all__ = [
     "AzureCognitiveServicesToolkit",
     "CogniswitchToolkit",
     "ConneryToolkit",
+    "DendriteToolkit",
     "FileManagementToolkit",
     "GmailToolkit",
     "JiraToolkit",
@@ -137,6 +141,7 @@ _module_lookup = {
     "AzureCognitiveServicesToolkit": "langchain_community.agent_toolkits.azure_cognitive_services",  # noqa: E501
     "CogniswitchToolkit": "langchain_community.agent_toolkits.cogniswitch.toolkit",
     "ConneryToolkit": "langchain_community.agent_toolkits.connery",
+    "DendriteToolkit": "langchain_community.agent_toolkits.dendrite.toolkit",
     "FileManagementToolkit": "langchain_community.agent_toolkits.file_management.toolkit",  # noqa: E501
     "GmailToolkit": "langchain_community.agent_toolkits.gmail.toolkit",
     "JiraToolkit": "langchain_community.agent_toolkits.jira.toolkit",
